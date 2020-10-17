@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tugas 46</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+
+        <p>Click Untuk Merubah Warna.</p>
+
+        <button onclick="myFunction()">Ubah Warna</button>
+    
+
+        <script>
+
+            function myFunction() {
+                const body = document.querySelector('body');
+                let nama = prompt('Input a Background Color : ');
+
+                if(nama !== null){
+                    body.style.backgroundColor = nama;
+                } else {
+                    confirm('You do not input a color!');
+                }
+                
+            }
+
+        </script>
+    </body>
+</html>
